@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  word_game:
+    image: word_game
+    build: .
+    environment:
+      NODE_ENV: test
+    ports:
+      - 10088:10088

@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+  word_game:
+    image: word_game
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8443:443
+    command: node --inspect=0.0.0.0:9229 app.js
